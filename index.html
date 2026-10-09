@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Аля и Андрей</title>
+<meta name="robots" content="noindex">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Аля и Андрей">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAQAElEQVR4nOydeXAb133Hf7tYHDwAiDcpihQVitRJHaYs6nRkWbfsuLYs13Vit26cjttOppNO3Wn/6KTjfzqZJp5OM9M2qdNEHk9qy5Yv2ZFs+qok6755SBQpieJ9EzcIENjt2wtYXBIJ7FsugP0Yfv7ii/US+34Pb9++9/Yt9fqb5wkABoAgCIZhNK3pkCYJJFmFDEbU7BvN13xScBn+M3ELIDRf86nw+9Bn0lTzs9gn+ZqEgHCtQvC1iuZnvU/yjQ4uAU1rOkJL3hOa1rRUU6FaBbhGiKAZidb8bPW5Nke4JcIkaKdofjb6pPAZEdoOJFrzs9oP9XPwNQlfqYCoNT+rfSr8HiC8HYDma75QcxDh7TStaUFTJNtVyp9j2JpE05oO6VA/h9BG1bSmQ5okiMjRF01rWtSkpI0Kmta0VItXKyB+pmlNi1rs59BSLY1J0dUKEW6dclqaZqpf3Xl1fuc18+Soz5RrL5nfV79msmJR3O1LBu9W3rpqGR8wTHlcBWV9i1cN1K/N+PzhfeK/37nEViVsjxg7fzDjtW7K81DzO9bxQYhksmxh65b9U/nW0PY5jomVJz+ZN9oXvWXpgqs7nwtQ+ozPK+KNw5cZsQ2CyHjdeOytguEeiAdNUtceOzBeWYt0cffNNd+8DwkYWbjk+qMHMj6vJPM5uA9I7j+izjS/pLczUclgt6EDa5vfKe67XdzbeZ+SgSi912EZ6cv4fKO49wzvxqSZ5pffaYMHseqrI6iUPHCz8rs3nKULMjvfsutqZV7iaiPETEoGu6uR3ozPsdBMsJCbsZpkGIPHBTJhYneV4flGAoRHXAiJzjyfDEwTIBtEMJjx+SbMPifDpQbImDQzfMZoBPkI6g0qOS58Ptfm4I42su2amdqfkw8y4cuzZHy+8VcrbOEBhsl47SosLeyXp9nhKiojIF3zYYZaOoeUyHhtL68GmUC7yvh8I8PvsyCdqKoDOaBJcqK6bm6PRYGUFNuowKUZrj3FZZ55RZAyEwvraYrK+HwTag6h9zQLdH/DBkiZ3lWbsiGv2DRUk2SDHl6y1p9rhhSwVyx0l1ZmQ15xNQffEuFHaSU6U/07G3ZCsqD/v2vLvszOn1BKsv+yJYVLhfaqoDPVn6hdYatcBEkx0LBxal5RZudPyBevVkCoSbJEdz3yRIDr4pwVXkthz7pt2ZNXfD8HZFvqz7feRWeH2YAuX2/uPAiULl2OMfWUzJLjjE3H6hpGlqyGGdO9ee9UUWl6HWOKaZz5HESMk6n+na37HRULYQYMNGwYWd6YbfkjXK3wbRBeh7fIdB901K1dz3qthfcvGeOLlvVu2pWF+cPeR03wW7B1SUhDlvhBU077ky95rQm7TSdqlnTtOJCl+XP44+voJyTA/ZyyUFNez9Kjh3InRyGS8doVtx97CghSge+gQi29V5bIWh3Mzbvx5J+5yhaAhNEla+7sfAbCK4BnXf4Q76KaQ4ODCAZqm98r6L6FNGp+3tu6T8inbEW7VzacAqXv2vPccMP6/sZHer77OPfbyeo8Id472iIWFPY5CprWdEiTYhuVLy+a1nRYS9Y+Z0DTmo7QwntGONPwWppqftb6/Fw3hk+56oSROpof5fuc/Z6xLu94V2DKQQemmIAv6JdnOrvOkE9QJp3epM8pzClenFe2kjKa5/Z4iQ8+aSH4J3tpaeLUO9nj7DvvGmqVqyjMBKO5wlqzxVrdNFdHTXz4aStoJMY11DLe8ZnfNQRzBJVTWFy/y7xgHShO3PkcTIyTjT7DBEbbPhy8dGgOSwYi4J0Yuvb2aPtHyueDZH59/D7ULPXpgK/v7K+nbPdAHdjunmSC/rKGg0rmAze2wmmCa7aGdJb7g5ffUk/J4LH3nJvsPqlkPpCkUJ+wNiG0Wlmdzf545xfukRugPsZvHqd9DsXyQVwTLHL+Maez1A94J8c6PgNVQgd9w63vK5Y/JP9eS0PpWNfX3KW/SnEOtfo9E8rkRpbOPk+UBnwuW885UDfOgSugSG6QaRQ5BVLn4DVggqBuUOWhTG5I5nNATJp9vmf8Dqge1F3LMLQC+UPyrQ+uApHMRY69Yy47fM/4bUgHpt2jCuQPJbRRpSmEe9dV5QfdzvFrFzyDvdNuV8DjDLicAbeL1yi/qFyzPi+fQq98M5Vn1ufk51ZWF61aR+VbZrh/v3ss4HNCOuB3jpnM5bjzn12HlBFrEuC1WLeowacZxn2va6Ll0kTrJVd3F7tse6L8sk+gV5SJ9pO/qK5oZeO8hkZzdS3Xv5Pw7/pdo5Am+D2j/JfGmv8UcGt0iEvlsw1UruzwWgk/4HKMXT0/3nrRNzrkd7H1AT3tR9+K30zooUkWtBPnnVvoBR//Lzc0zT8UgN0jqTegCsZgthiLy4pXP1y06mE64IU0Iej3KBAv6dpFfMrEOLj8yZstfcffn2i7EnXk7LdktwCxNMuEsEO+9mFQEfTbxtHL1Xt3/MpZZM1rWkYUQ1pAEKE+CIzxooCvSUKj+CA8iyV6dF9WH/2Ubx95034r3mwB/sQh1HfyQ3D/sH9E+hQJDu/YYG5xIaQFBKFAvChJewSU0WNXzrb/6udMMJDwsAE7cf8IP86UFpCKxIsiuGFaRhx9wa37vv5D5+9/DenJ5vVNK5ctA2U5de5s282bUaZ4BwHeeJH8WZ2UnOHx6d7mj9O0ZOhI3Z7tjylfMhCbHl4/v7w8yuRv3sUdr/DYilhT4dKT7de6Dv8W0hCT0fjkvr0Lq6pgLiBJcvej28350au2444XyY3KsoVE7APBpb0jgy3/8S8Qt5eCUccQaIKvYbVYnn78iZKiubyMMRgM+3bs1Ov1YQtzvHgdGluRtEcw6BuHfhmcStCLoEQDdAbEa42WFhc/tf/x2F+t8syzWlH9IWlH440Xr5WYz2HvumnriP9wNVN+DqgEBvQmvdSoqa7+3p69RsOsFx3ERGVFBWoR8zpihAxbKtwrC8IPGIvuPnYk7tEWVBRNuVTUKTk9NR3Saxsa0C9Vp9OBmlixdOnSOmFtf3zxCmlKaJ3yPaYYdNDrHbt+KfY4SUrnmnCA+kA/mm2bN9fXLgZVsnXDxn4bP7AAuGMnrn3OjTjg0OPXL8bt7yqvKZ/2TYPKYAL0/p27VFsygLt4qdv0I0NOIaZ4STXJvQ+P2EpTWfyRK/Fn3dnH7KAygr6A41Q/OrWDuqH0xpJFTZjiJfVJEG5kiZj3QQrVlgy+e7Av9vCKK0vcNuVuOp0h/h4n7VZdZRYHnPGS+vxzZYWmCBGTpu777ZOxR6fPUcslQDrCZy7giZfUl8w+BwhraZqaPx3vOb9jfWkzrUaFYI2X1JdUJEJ1FZOm5tOBmNYow0xP+UEjaXDGS+rz65CK9QkOrSE3eOMl0ZTYLg3NHJRZxz06SH8m7Z73v7jcdY89P9YvKnt6x1qreXa9vSnsAWO8pFqYzxGahSy/jj0y4gHzQvOseWU1FaY8kzE/B6XOCed4/+hY70hy/SJ6o764qrSossRSZPG6vD6Xd8o9NXB7YMrlgWR5+9iFf3vzy9Dbry90/PaDb3/y4o6ndqxVYA8E1nhJdMTVCpY0EiZBiUGgcrBiy6q6pmU1K2vjbmAfmUQt2bG+kY5z7QOdfZCY+fVVS5uWFy0oKV5Qai2ZF3eb7pY7HWdbb5xuRWUFZsMvDjW/e1zo8+V/63an1z8d/NlvPhscs//Vc9tw74Gv9AF/ys8h5YtLeP6xjBpmABpk2fjklpWPrCGp+41lWEsL0Kv2ofqm721BReTyZ+fbTlz1ecNtW2OOAe2kcU9TYWUJPIiahu+g186X9reeuHbmo5OTg+MwA975w0U+rvm5xlf/fNfuzSuQPnai5ReHvnB5fG9+dLakwHxwdyPWPWCNl1QTZ07cguglbLkGq6BT9Y++8Lj0wKJqjpKq0k3PbFu2cSUkxbTP33by+pXm8ySpW7OjcfmW1egkAknRfqrl2yPfoPPXPxx+LdE2/SO2A3/zX7z+zWsvrKirDH10vaPvL/75LV5/8O9/WVFixbQHRNvUQ/jiJfXF2ecgmX8sq446sNB7FMWtz25ft28jqSMhWfRGw5od69ALUmb5loalG1dc+PT0fbYJBIIGvQ7V/6+/elAaV8SqJQv+9e8OvPrzI0Y9NR0I4tsDYI6XVBNnT3SKf5RvicR+mZT8j1/YH/UhKiCL1y3Z/fIT5kILpBu9Q5M+//Ti6tK4n3beG84xGRaUFWDdQ7uPP+lgiZfUp4QRF65WEe+TZOMn0Sn5cb4KA8/8/fchPakqv1/Y6haWAf49CNU/nnhJfRL3PNUoGAB1TBlNb/DFK0JL3hOYdMRRQUZ0gc0puOMV0kIPKfdW6FiXWUfDNnZAIyVwxkui+TmkoVKDQ0ceVjxTY1ZgjldY83NIhTZIRCqTHwMz8xPLnI5fqJQg6LDGS+pH3mUf7n2T9pel5Ecx81pjbscvkmCoZxCdM8ur5su4ZSxBRo81XlI/tD6HtD4BoezI4UcdW9wSE8tcjl/M8CtGYh+3ffg79g6MVU2rN+zYnKhnjw7SZ5pPtZxnn8j5/I9fsBRYYZYEge0CxhcvqY9qDmFdOu4alyYgVI7k8aOYSYNjjscvUmsSXT93bbBvaM/BvXmW6PvknHbn5+8dH+0fhhTwg1E4W+OJl9TXvfLDH4PYCuBTUqJT99uP/D72CLccfBQSgEYffvKzw7z+z396fuMaYYQW9Q6tWVp19Bv2N3fm6p39320w55nw7GEWraIQplwTqga6b91F/7fH6W672DI5Mk5RlKXAwtBMz+3uC1+fO3X8hMvOLkhHkMT2J3fOr6mE2TNJV0yz5YMFR7ykjtBDGr3Oi3wpzBIVjF8kWXPUr1qSk5fT/N5xv88fDAS72rrQCzk0Tfu8vtBmRpNxx4HdVbXVMHtohnQz+YTYj4n9SU1Xvu0AnLz7/BOx5n1GPkEV4xdM0kXE6/KgGuJ2e1fcTxevqNu8e2tOfi4khY0uHaeTqW+Sg2tzELH96rLpJFDB+AXhcbhzLXkwe1Dgdz6zp3Fk/MaV9sHufsekHZ3J0cllfs2CZWuXF5Qkv+ZYkNFNMmW44yXVFNdEFed3YNBpytFfHnn2H3+Ahp4gKQpLi1ANAfKBcnKEXsgIj0PBGC+pZu+YFc9hwGuQ6NT9NOXuta7/e/tLUA0TzPwprrWBO15SnwxHEU8KacvZD09e+/ISqAAnU+igi3FHKjalGEFFnG+IUP9myn5ac+xXH40PjD76g91xL7umacLlJ7xBcpoGX5BALz9NTgeJIAMBBjURgKaJaW61Cz3BkCSj487iKNXrGANJG3WMkRWMSceYDTQV7wyGchXVGQ66kJucJWdcZuJT4b/Kd//w5xtBy+DHJeAPUAYK1Ip0Pvr5o6dtwxM7X3rcXGRB8Z6Y0tn9pNNPOvykJzjTFglbRIJRxSt6KnUuRVsNtFlPWwx0oSmIylCAMaAWqJuxjvVeWAAAB0VJREFU4ojLTHyKwHzvQ9zMctuc1tL7XVAkwt41hEqzpbZCxi1j8dgkz04giN5+x7uHL1U0rSOLy+hkL3Ef/EcDJHoNcpoEJt9AmUzWfKPJZADAHaPE960Aw7dB8KRxM8JtcyVROLzDtiuvf4jEgu0NtX+0kaDi/3CZAN31/pn+b1qQbnrt+ZziWc9UdXHLQ1D5+YXrm4qamgxFRbxPg0KgIujwBx3+iRF0SqKoglzzvNx8vU6HNVKxKRW6puCuYUB+HY/he0Pz65Nf1rPvqxb7neGVP9ptLIjuipiacLa90ezsHoEUGLAFa1580bJiJaGCNcGmA4ERxyR6WUw5BXnmfGMO3nhJtO6vX34FQj3qgksI1zZy+C1H3o09YIamV2xdDbNEn28ylVjHrnejA/Db3AMn29wDEzo9ZSq2oo7lifae7o8vdB4+5ZvgFn0giaV/+lhB3eyGxWkGbtkNA/oyU0VF0p0cmPAFAnavG2VersHIr4uJI15SnxtbYbU0pSHaScWPw73Wu1OeKTRYBbOkfH2dwWxqf6M54PXT08GRS7fRS49G5IPBaU/41jcqx7j8hzsKl8+uchrz6tomDejET6hrDcEIRp0Ou8dTWVCYZzThiVfY4Ysggy+Ne4RoXOrq5+chKQqXVa3/6XOlD4Xvp512eqUlo7Rx8fqf/vFsS0aQhk67HpUMUD1oWG/YYePG1gFr7ChRic/qETQIPakp+4k4/cHJVdsbkxu/MFhyl7+8c+FA4+C3N22dA1Nj7PiFqdg8r76yYtPSvIpkxi/uOPQ2v4prjEg8fv+Yy1FqtsgeL6lPcW+B6zZlS6KoGYlOyU90eH6vL8Xxi7z5hYsPbgKZGPSot98lLja3p8xslj1eUp+dfc79vvkLeBw6IWobv0gzcMUrrMVRPmzp/Q9QPeMXzMgApBVmoxF37CjuwpZN+HOP7PqBB3n/8QsFQN+2+X8+/epk62jdkgmXa3R42ONR72Mic3NzSsrKKsrLntq1o3KeBWvsiI7TF4Qbjbhfuez60J/M6J7p+vVL+fELUBbb8OTnhz794GJXB0Gm1zghSZJP79v7/YNPG/QUptihwnEe6zzE3z03ixvqG7atady7oXxRMjd0zJahuwOXj5878fWVMwTlTKtiIWVRddXfvvJybc1CHLHj7lvhe9DxpLM61JZvrqJXjiV38UP15d+pLKkqRa+cpC53Y/E63GN9oyM9w0N3+rsu3/I62AXjeoBM35KBuNvTe+LMudqF1ThiJ4ythO5z4s83YtmRwYfZg8LGlxLAzBgQN4k06PW6P+99cmzbpiZUhcgeR5Kbz8H3qNNIExItiw8qppsfT0hzUDg/af4KRxxJsQ6hhWsY2bWKsUHalwye/oEhHLHj75Vl8KWgYhzpX23w9AwO4ogdV3OwIQz1fsitVUwgUwqHze7AETuuzSFEkcah9bnpvR5GuoAjdsJ8Dgb4+6zl17nzrHaxw3EcXXoBiSpzBxp4S//LBJUhf+y4O96EkoIlzbFa7QNDQWBaQZd2vZBpBI7Y8WuCMeGWiNy6uKbKBvA5oe8gdVrJwIn8sSMlLREah16wekW690KmBThiR4rlhZZcw8ipbQbDTZXN1M1Q5I+deJc9tvSr0xchU/qa1AyO2PE1h+R8E5HK4N++1wcaSiB/HLk2R0TvKS1qefyewSHQwA+OOIptDv4zoCVaHt/tmd1DsjSSRf44qms+h0bS4IgdibVkcCVRQxEwxI5MULfIpkFDEXDEjpS0RACL1lAGDLHL6vkcmQSO2PHzObj3AFi0hjJgiB0pnGn49xg0aCgCjtiRouJHXHBoDWWQP3bY53OAhiLgiB0Zfk8AHq2hDPLHjhTrkFBLRGYNGoqAI3bS+RwMHq2hDPLHjuJG4aSzAWTWoKEIOOJIwoN6QlJONZRB/tjxK/vwPaZ8qaFJiU7dBw1FwBFH6XwO4XzD3WfNyOdrKIP8cQw/NUEcq4WYNCVfQxlwxFGYz0FIRvFl1hrKgCF20vkcDA4NGoqAI3b881b48w0XStm1hiLgiCPb5mBC6+ZzAy/yag1lwBFHkl/3muBSQYNEp+xrKAOOOIrzOULnG5COwcjgg4Yi4IgjxU+5iGofhKRcvgZucMRReGoCf7O92BwJp6n7GsqAI44R8zmYiLpFLl9DGeSPo+RJTVxfekjL5YOGIuCIIyWUlzi9pzKlGgohfxy5Nge/uDGeVEMZcMQx/nwOMsZJwddQBvnjSHFlRBhxAYmWywcNRcARx3CbQ3w+DzCilsfXUAj540gJD1TgPgu1RJiYNGlfQxlwxDG8Pocwq0+i5fE1lAFDHEki9B4YHBo0FAFH7Ci+jDDxzj3yaA1lwBBHip8DLPRWcanMWkMRcMSRFBqNjLS3W6JT9zWUAUMc2ZV9mMieEGE7mXzQUAQccWT7OUgQr17YSoV/4oY4Ypuyr6EU8sdRXJ+DP9OwJxxaPPUQsvgayoAjjv8PAAD//5MmSboAAAAGSURBVAMADBCKGtyc/h0AAAAASUVORK5CYII=">
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap">
+<style>
+body{margin:0}[hidden]{display:none!important}
+/* Layout: one phone-width column. The scene (two figures on an evening embankment) leads,
+   the last message hangs over it as a speech bubble, the send buttons sit right under the thumb. */
+:root{
+  --bg:#eceaf2; --surface:#f9f7fc; --ink:#23202e; --muted:#6b6679; --line:#d5d0e0;
+  --accent:#c2413b; --accent-ink:#ffffff; --accent-soft:#f6dedb;
+  --sky-top:#8ea2ca; --sky-mid:#cdc5dc; --sky-low:#f7caa0;
+  --far:#7d86a6; --water:#a3aecb; --glint:#e9d9d6; --stone:#8b8794; --stone-top:#aca8b6; --pave:#c4c0cc;
+  --msg-me:#0a84ff; --msg-me-ink:#ffffff; --msg-them:#dcd9e4; --msg-them-ink:#17151d;
+  --coat:#24212b; --fig-edge:transparent; --snow:0;
+  --display:"Caveat","Segoe Print","Comic Sans MS",cursive;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#14121b; --surface:#1f1c29; --ink:#f1eef7; --muted:#a59fb6; --line:#373247;
+  --accent:#ef6a62; --accent-ink:#1b0f10; --accent-soft:#3a2428;
+  --sky-top:#121831; --sky-mid:#2a2648; --sky-low:#5b3551;
+  --far:#0f1326; --water:#1c2340; --glint:#6a5a86; --stone:#33303e; --stone-top:#474354; --pave:#262330;
+  --msg-me:#0a84ff; --msg-me-ink:#ffffff; --msg-them:#2c2937; --msg-them-ink:#f1eef7;
+  --coat:#17151d; --fig-edge:#7a748e; --snow:1; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#14121b; --surface:#1f1c29; --ink:#f1eef7; --muted:#a59fb6; --line:#373247;
+  --accent:#ef6a62; --accent-ink:#1b0f10; --accent-soft:#3a2428;
+  --sky-top:#121831; --sky-mid:#2a2648; --sky-low:#5b3551;
+  --far:#0f1326; --water:#1c2340; --glint:#6a5a86; --stone:#33303e; --stone-top:#474354; --pave:#262330;
+  --msg-me:#0a84ff; --msg-me-ink:#ffffff; --msg-them:#2c2937; --msg-them-ink:#f1eef7;
+  --coat:#17151d; --fig-edge:#7a748e; --snow:1; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.4}
+.app{max-width:440px;margin:0 auto;padding-inline:16px;padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:calc(28px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+h1{font-family:var(--display);font-weight:700;font-size:34px;line-height:1;margin:0}
+.brand{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.bar{height:6px;border-radius:999px;background:var(--line);overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:999px;transition:width .8s ease-out}
+.count{margin:0;font-size:13px;color:var(--muted);display:flex;align-items:baseline;gap:6px}
+.count b{font-family:var(--display);font-weight:700;font-size:26px;line-height:.8;color:var(--accent);font-variant-numeric:tabular-nums}
+
+.scene{position:relative;border-radius:22px;overflow:hidden;
+  background:linear-gradient(var(--sky-top) 0%,var(--sky-mid) 38%,var(--sky-low) 60%)}
+.scene svg{display:block;width:100%;height:auto}
+/* the scene keeps its own time of day, whatever theme the page is in */
+[data-time="morning"]{--nk:0;--sky-top:#a9c7e8;--sky-mid:#f3d6d9;--sky-low:#fde3b8;--far:#93a0bd;--water:#b9cbe2;--glint:#fff3e0;--stone:#9a96a2;--stone-top:#b9b5c2;--pave:#cfcbd6;--coat:#24212b;--fig-edge:transparent}
+[data-time="day"]{--nk:0;--sky-top:#5aa7e6;--sky-mid:#9ccdf2;--sky-low:#d6ecfb;--far:#7f95b3;--water:#6fa9d8;--glint:#e4f3ff;--stone:#9d9aa5;--stone-top:#bdbac6;--pave:#d3d0da;--coat:#24212b;--fig-edge:transparent}
+[data-time="evening"]{--nk:.22;--sky-top:#8ea2ca;--sky-mid:#cdc5dc;--sky-low:#f7caa0;--far:#7d86a6;--water:#a3aecb;--glint:#e9d9d6;--stone:#8b8794;--stone-top:#aca8b6;--pave:#c4c0cc;--coat:#24212b;--fig-edge:transparent}
+[data-time="night"]{--nk:.6;--sky-top:#121831;--sky-mid:#2a2648;--sky-low:#5b3551;--far:#0f1326;--water:#1c2340;--glint:#6a5a86;--stone:#33303e;--stone-top:#474354;--pave:#262330;--coat:#17151d;--fig-edge:#7a748e}
+.rain{animation:rain .55s linear infinite} .snowfall{animation:snow 5s linear infinite}
+@keyframes rain{to{transform:translate(-12px,48px)}} @keyframes snow{to{transform:translate(-10px,64px)}}
+.bubble{display:flex;flex-direction:column;align-items:center;gap:5px;margin-top:-2px}
+.bubble-in{--b:var(--msg-them);--t:var(--msg-them-ink);position:relative;max-width:80%;min-width:0;
+  background:var(--b);color:var(--t);border-radius:19px;padding:8px 14px;overflow-wrap:anywhere}
+.bubble[data-mine="1"] .bubble-in{--b:var(--msg-me);--t:var(--msg-me-ink)}
+.bubble-in::before,.bubble-in::after{content:"";position:absolute;bottom:0;height:18px}
+.bubble-in::before{left:-7px;width:20px;background:var(--b);border-bottom-right-radius:16px 14px}
+.bubble-in::after{left:-10px;width:10px;background:var(--bg);border-bottom-right-radius:10px}
+.bubble[data-mine="1"] .bubble-in::before{left:auto;right:-7px;border-radius:0;border-bottom-left-radius:16px 14px}
+.bubble[data-mine="1"] .bubble-in::after{left:auto;right:-10px;border-radius:0;border-bottom-left-radius:10px}
+.bubble-text{position:relative;z-index:1;font-size:16px;line-height:1.3;text-align:center}
+.bubble-meta{font-size:11px;color:var(--muted)}
+
+.far{fill:var(--far)} .water{fill:var(--water)} .glint{stroke:var(--glint)} .stone{fill:var(--stone)}
+.stone-top{fill:var(--stone-top)} .pave{fill:var(--pave)}
+.coat{fill:var(--coat);stroke:var(--fig-edge);stroke-width:1.2}
+.fig,.arm{transition:transform .7s cubic-bezier(.3,1.3,.5,1);transform-origin:0 0}
+.hop{transform-origin:0 0}
+.scene.play .hop.is-sender{animation:hop .6s ease-out}
+.wave{transform-origin:0 0;animation:wave .5s ease-in-out infinite alternate}
+.float{animation:float 3.2s ease-in infinite}
+.twinkle{animation:twinkle 1.4s ease-in-out infinite alternate}
+@keyframes hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-14px)}}
+@keyframes wave{from{transform:rotate(-12deg)}to{transform:rotate(14deg)}}
+@keyframes float{0%{transform:translateY(8px);opacity:.15}30%{opacity:1}100%{transform:translateY(-26px);opacity:0}}
+@keyframes twinkle{from{opacity:.45}to{opacity:1}}
+@media (prefers-reduced-motion: reduce){
+  .fig,.arm{transition:none}
+  .wave,.float,.twinkle,.rain,.snowfall,.confetti,.scene.play .hop.is-sender{animation:none}
+}
+
+.controls{display:flex;flex-direction:column;gap:14px}
+.pick{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted)}
+.picks{display:flex;flex-direction:column;gap:8px}
+.seg{display:flex;flex-wrap:wrap;justify-content:flex-end;border:1.5px solid var(--line);border-radius:18px;padding:2px;background:var(--bg)}
+.seg button{font:500 13px var(--body);color:var(--muted);background:none;border:0;border-radius:999px;padding:6px 11px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.hint{font-size:13px;color:var(--muted);margin:0}
+.hint.warn{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.grid button{font:600 13.5px/1.2 var(--body);min-height:58px;padding:8px 6px;border-radius:14px;cursor:pointer;
+  background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-bottom-width:4px;text-wrap:balance}
+.grid button:active:not(:disabled){transform:translateY(2px);border-bottom-width:2px;margin-bottom:2px}
+.grid button.hot{background:var(--accent-soft);border-color:var(--accent)}
+button:disabled{opacity:.5;cursor:not-allowed}
+button:focus-visible,input:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px}
+
+form{display:flex;gap:8px}
+form input{flex:1;min-width:0;font:400 15px var(--body);color:var(--ink);background:var(--surface);
+  border:1.5px solid var(--line);border-radius:14px;padding:11px 13px}
+form button{font:600 14px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:14px;padding:0 16px;cursor:pointer}
+
+h2{font:500 12px var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:6px 0 0}
+.log{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.log li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}
+.log li span:first-child{min-width:0;overflow-wrap:anywhere}
+.log b{font-weight:600}
+.log time{color:var(--muted);font-size:12px;white-space:nowrap;font-variant-numeric:tabular-nums;padding-top:2px}
+.log .empty{color:var(--muted);border:0}
+.card{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.card-title{margin:0;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.1}
+.who-row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.who-row button{font:600 15px var(--body);min-height:52px;border-radius:14px;cursor:pointer;background:var(--accent);color:var(--accent-ink);border:0}
+.who-row a{display:flex;align-items:center;justify-content:center;text-decoration:none;font:600 15px var(--body);min-height:52px;border-radius:14px;background:var(--bg);color:var(--ink);border:1.5px solid var(--line)}
+.dim{fill:#141225;opacity:0;pointer-events:none}
+.scene[data-indoor="1"][data-time="evening"] .dim{opacity:.16}
+.scene[data-indoor="1"][data-time="night"] .dim{opacity:.42}
+#rebubble{margin-top:-6px}
+.react{align-self:center;font:600 15px var(--body);background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:12px 22px;cursor:pointer}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{font:500 13px var(--body);padding:7px 12px;border-radius:999px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.chips button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.swatches{display:flex;gap:8px}
+.swatches button{width:28px;height:28px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.swatches button[aria-pressed="true"]{outline:2.5px solid var(--ink);outline-offset:2px}
+details.card{display:block}
+summary{cursor:pointer;font-family:var(--display);font-weight:700;font-size:23px;line-height:1.1}
+details .picks{margin-top:12px}
+.pick{align-items:flex-start}
+.pick>span{padding-top:7px}
+.stats{display:flex;gap:14px}
+.stat{display:flex;flex-direction:column;align-items:flex-end;font-size:11px;color:var(--muted);white-space:nowrap}
+.stat b{font-family:var(--display);font-weight:700;font-size:26px;line-height:1;color:var(--ink);display:flex;align-items:center;gap:4px;font-variant-numeric:tabular-nums}
+.stat svg{width:14px;height:14px;fill:var(--accent)}
+.city{font:600 11px var(--body);fill:#fff;paint-order:stroke;stroke:rgba(20,18,37,.5);stroke-width:3px}
+.party{margin:0;text-align:center;font-family:var(--display);font-weight:700;font-size:30px;line-height:1.1;text-wrap:balance;color:var(--accent)}
+.confetti{transform-box:fill-box;transform-origin:center;animation:confetti linear infinite}
+@keyframes confetti{from{transform:translateY(0) rotate(0)}to{transform:translateY(600px) rotate(720deg)}}
+.switch{align-self:center;background:none;border:0;color:var(--muted);font:400 12px var(--body);text-decoration:underline;cursor:pointer;padding:8px}
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><h1>Аля и Андрей</h1><p class="count" id="count" hidden><b id="count-n"></b><span id="count-t"></span></p><div class="bar" id="bar" role="progressbar" aria-label="Пройдено до встречи" aria-valuemin="0" aria-valuemax="100" hidden><i id="bar-fill"></i></div></div>
+    <div class="stats" id="stats" hidden>
+      <div class="stat"><b><svg viewBox="-8 -9 16 14" aria-hidden="true"><path d="M0,3.4C-7,-2 -3.6,-8 0,-4C3.6,-8 7,-2 0,3.4Z"/></svg><span id="st-today">0</span></b>сегодня</div>
+      <div class="stat"><b id="st-streak">0</b><span id="st-streak-t">дней подряд</span></div>
+    </div>
+  </header>
+
+  <div class="scene" id="scene">
+    <svg viewBox="0 0 360 280" role="img" aria-labelledby="scene-desc">
+      <desc id="scene-desc">Фигурки Али и Андрея на набережной</desc>
+      <g id="wx-back"></g>
+      <g id="sky"></g>
+      <g id="place"></g>
+      <rect class="dim" width="360" height="280"/>
+      <g id="fig-andrey" class="fig"></g>
+      <g id="fig-alya" class="fig"></g>
+      <g id="fx"></g>
+      <g id="wx-front"></g>
+    </svg>
+  </div>
+  <p class="party" id="party" hidden>Дождались! Сегодня вы наконец вместе.</p>
+  <div class="bubble" id="bubble" data-mine="0">
+    <div class="bubble-in"><div class="bubble-text" id="bubble-text"></div></div>
+    <div class="bubble-meta" id="bubble-meta"></div>
+  </div>
+  <div class="bubble" id="rebubble" data-mine="0" hidden><div class="bubble-in"><div class="bubble-text" id="re-text"></div></div></div>
+  <button type="button" class="react" id="react" hidden></button>
+
+  <div class="card" id="setup" hidden><p class="card-title">Сайт ещё не подключён к базе сообщений</p></div>
+  <div class="card" id="code-card" hidden>
+    <p class="card-title">Введи ваш общий код</p>
+    <form id="code-form"><input id="code-input" type="text" maxlength="40" aria-label="Общий код" autocomplete="off" autocapitalize="off"><button type="submit">Войти</button></form>
+  </div>
+  <div class="card" id="who-card" hidden>
+    <p class="card-title">Кто ты?</p>
+    <div class="who-row"><button type="button" id="me-alya">Аля</button><button type="button" id="me-andrey">Андрей</button></div>
+  </div>
+  <div class="controls" id="controls" hidden>
+  <p class="hint" id="hint"></p>
+  <div class="grid" id="grid"></div>
+  <form id="note-form">
+    <input id="note-input" type="text" maxlength="80" placeholder="Свои слова" aria-label="Свои слова" autocomplete="off">
+    <button type="submit" id="note-send">Отправить</button>
+  </form>
+  <div class="card" id="today">
+    <p class="card-title" id="mood-label">Моё настроение сегодня</p>
+    <div class="chips" id="moods" role="group" aria-labelledby="mood-label"></div>
+    <div class="pick"><span id="look-label">Мой образ</span><div class="swatches" id="looks" role="group" aria-labelledby="look-label"></div></div>
+  </div>
+  <details class="card" id="picks">
+    <summary>Сцена</summary>
+    <div class="picks">
+      <div class="pick"><span id="place-label">Место</span><div class="seg" id="seg-place" role="group" aria-labelledby="place-label"></div></div>
+      <div class="pick"><span id="mode-label">Погода и время</span><div class="seg" id="seg-mode" role="group" aria-labelledby="mode-label"></div></div>
+      <div class="pick" id="pick-time"><span id="time-label">Время</span><div class="seg" id="seg-time" role="group" aria-labelledby="time-label"></div></div>
+      <div class="pick" id="pick-weather"><span id="wx-label">Погода</span><div class="seg" id="seg-weather" role="group" aria-labelledby="wx-label"></div></div>
+    </div>
+  </details>
+  </div>
+
+  <h2>Недавнее</h2>
+  <ul class="log" id="log"></ul>
+  <div class="card" id="tg-card" hidden>
+    <p class="card-title">Уведомления в Telegram</p>
+    <p class="hint" id="tg-text"></p>
+    <form id="tg-form" hidden><input id="tg-token" type="text" aria-label="Токен бота" placeholder="Токен от BotFather" autocomplete="off" autocapitalize="off"><button type="submit">Сохранить</button></form>
+    <div class="who-row" id="tg-steps" hidden><a id="tg-open" target="_blank" rel="noopener">1. Открыть бота</a><button type="button" id="tg-check">2. Готово</button></div>
+  </div>
+  <button type="button" class="switch" id="switch" hidden></button>
+</div>
+<script>
+(function(){
+const DB_URL='https://alya1-335b4-default-rtdb.europe-west1.firebasedatabase.app'.replace(/\/+$/,'');
+const NAMES={alya:'Аля',andrey:'Андрей'};
+const KINDS={
+  miss:{label:'Я скучаю',hot:1}, hug:{label:'Хочу тебя обнять',hot:1}, kiss:{label:'Целую',hot:1},
+  love:{label:'Люблю тебя'}, think:{label:'Думаю о тебе'}, proud:{label:'Горжусь тобой'},
+  morning:{label:'Доброе утро'}, night:{label:'Спокойной ночи'}, sulk:{label:'Я дуюсь'}, note:{label:''}
+};
+const REST={eyes:'dot',mouth:'smile',inner:8,outer:8,lean:0,dx:0};
+// S = the one who sent, P = the partner
+const POSES={
+  rest:{S:{},P:{}},
+  miss:{S:{eyes:'sad',mouth:'frown',tear:1,inner:58,lean:4},P:{mouth:'soft',blush:1,inner:22},fx:'drift'},
+  hug:{S:{eyes:'happy',blush:1,inner:70,outer:-30,lean:4,gap:64},P:{eyes:'happy',blush:1,inner:70,outer:-30,lean:4,gap:64},fx:'hearts'},
+  kiss:{S:{eyes:'happy',mouth:'kiss',blush:1,inner:42,lean:9,gap:76},P:{eyes:'happy',blush:1,gap:76},fx:'hearts'},
+  love:{S:{eyes:'heart',mouth:'big',blush:1,inner:34,outer:30},P:{eyes:'happy',blush:1},fx:'hearts'},
+  think:{S:{eyes:'up',mouth:'soft',blush:1},P:{},fx:'thought'},
+  proud:{S:{eyes:'star',mouth:'big',inner:150,outer:150},P:{eyes:'happy',blush:1},fx:'stars'},
+  morning:{S:{mouth:'big',outer:150,wave:1},P:{mouth:'smile'},fx:'sun'},
+  night:{S:{eyes:'sleep',mouth:'soft',lean:5,dx:8},P:{mouth:'soft'},fx:'night'},
+  sulk:{S:{eyes:'angry',mouth:'pout',blush:1,inner:-30,outer:-30,lean:-5},P:{mouth:'flat',eyes:'worry'},fx:'cloud'},
+  note:{S:{mouth:'big',outer:150,wave:1},P:{}}
+};
+Object.assign(POSES,{
+  re_miss:{S:{eyes:'happy',blush:1,inner:58,lean:4,gap:100},P:{eyes:'happy',blush:1,inner:58,lean:4,gap:100},fx:'hearts'},
+  re_hug:POSES.hug, re_sulk:POSES.hug, re_note:POSES.hug,
+  re_kiss:{S:{eyes:'happy',mouth:'kiss',blush:1,inner:42,lean:9,gap:76},P:{eyes:'happy',mouth:'kiss',blush:1,inner:42,lean:9,gap:76},fx:'hearts'},
+  re_love:{S:{eyes:'heart',mouth:'big',blush:1,inner:34,outer:30},P:{eyes:'heart',mouth:'big',blush:1,inner:34,outer:30},fx:'hearts'},
+  re_think:{S:{eyes:'happy',blush:1,inner:30},P:{eyes:'happy',blush:1,inner:30},fx:'hearts'},
+  re_proud:{S:{eyes:'star',mouth:'big',inner:150,outer:150},P:{eyes:'happy',mouth:'big',blush:1,inner:30},fx:'stars'},
+  re_morning:{S:{mouth:'big',outer:150,wave:1},P:{mouth:'big',outer:150,wave:1},fx:'sun'},
+  re_night:{S:{eyes:'sleep',mouth:'soft',lean:5,gap:80},P:{eyes:'sleep',mouth:'soft',lean:5,gap:80},fx:'night'}
+});
+const REPLY={miss:'И я скучаю',hug:'Обнимаю в ответ',kiss:'Целую в ответ',love:'И я тебя люблю',think:'И я о тебе',proud:'Спасибо, это важно',morning:'Доброе утро!',night:'Сладких снов',sulk:'Прости, обнимаю',note:'Обнимаю'};
+const MOODS={
+  happy:{label:'Радуюсь',face:{eyes:'happy',mouth:'big',blush:1}}, calm:{label:'Спокойно',face:{}},
+  miss:{label:'Скучаю',face:{eyes:'sad',mouth:'soft'}}, sad:{label:'Грущу',face:{eyes:'sad',mouth:'frown',tear:1}},
+  tired:{label:'Без сил',face:{eyes:'sleep',mouth:'flat'}}, angry:{label:'Злюсь',face:{eyes:'angry',mouth:'pout',blush:1}}
+};
+const LOOKS={black:'',beige:'#cdb08f',red:'#a8323a',blue:'#3d5a8c',green:'#4c6b55'}, LOOK_NAMES={black:'Чёрное',beige:'Бежевое',red:'Красное',blue:'Синее',green:'Зелёное'};
+const MODES={auto:'Настоящие',manual:'Вручную'};
+const CITY={alya:{name:'Москва',lat:55.75,lon:37.62},andrey:{name:'Краснодар',lat:45.04,lon:38.98}};
+const PL={cities:'Два города',embankment:'Набережная',home:'Дом',cafe:'Кафе',station:'Вокзал',airport:'Аэропорт'}, INDOOR={home:1,cafe:1,airport:1};
+const SKYWIN=(x,y,w,h)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" style="fill:var(--sky-top)"/><rect x="${x}" y="${y+h*.45}" width="${w}" height="${h*.3}" style="fill:var(--sky-mid)"/><rect x="${x}" y="${y+h*.72}" width="${w}" height="${h*.28}" style="fill:var(--sky-low)"/>`;
+const PLACES={
+  embankment:()=>'<path class="far" d="M0,172V158h26v-10h44v10h30v-6h18v6h40v-14h22v14h36v-8h30v8h46v-12h28v12h40v14z"/><rect class="water" x="0" y="172" width="360" height="46"/><g class="glint" stroke-width="2" stroke-linecap="round" fill="none"><path d="M150,182h60M132,192h34M196,194h44M160,204h52"/></g><rect class="stone" x="0" y="214" width="360" height="38"/><rect class="stone-top" x="0" y="214" width="360" height="7"/><rect class="pave" x="0" y="252" width="360" height="28"/>',
+  home:()=>`<rect width="360" height="280" fill="#e7d8c6"/>${SKYWIN(204,36,116,96)}
+    <path d="M204,36h116v96h-116zM262,36v96M204,84h116" fill="none" stroke="#fbf7f1" stroke-width="5"/>
+    <rect x="190" y="28" width="18" height="112" rx="4" fill="#c98f7a"/><rect x="316" y="28" width="18" height="112" rx="4" fill="#c98f7a"/>
+    <rect x="40" y="48" width="64" height="48" rx="3" fill="#fbf7f1" stroke="#8a6a55" stroke-width="4"/><path d="${HEART}" transform="translate(72,74) scale(2.4)" fill="#d9666b"/>
+    <path d="M26,238V120" stroke="#6b5647" stroke-width="4"/><path d="M8,122l8,-34h20l8,34z" fill="#f3c96b"/>
+    <rect x="62" y="150" width="236" height="70" rx="22" fill="#a85c4f"/><rect x="50" y="186" width="260" height="56" rx="18" fill="#b96b5c"/>
+    <rect x="96" y="170" width="52" height="34" rx="10" fill="#e9c9a8"/><rect x="214" y="170" width="52" height="34" rx="10" fill="#d7a98f"/>
+    <rect y="238" width="360" height="42" fill="#b89474"/><ellipse cx="180" cy="264" rx="140" ry="12" fill="#e2cfb4"/>`,
+  cafe:()=>`<rect width="360" height="280" fill="#dccdbf"/>${SKYWIN(18,34,324,128)}
+    <path d="M18,34h324v128h-324zM99,34v128M180,34v128M261,34v128" fill="none" stroke="#4a3a33" stroke-width="5"/>
+    <path d="M90,0v16M180,0v22M270,0v16" stroke="#2f2a2a" stroke-width="2"/><path d="M78,28q12,-18 24,0zM168,34q12,-18 24,0zM258,28q12,-18 24,0z" fill="#2f2a2a"/>
+    <rect x="18" y="162" width="324" height="10" fill="#6b4a3a"/>
+    <rect x="146" y="194" width="68" height="8" rx="4" fill="#6b4a3a"/><rect x="177" y="202" width="6" height="40" fill="#4a3a33"/><rect x="162" y="238" width="36" height="6" rx="3" fill="#4a3a33"/>
+    <rect x="156" y="182" width="12" height="12" rx="2" fill="#fff"/><rect x="192" y="182" width="12" height="12" rx="2" fill="#fff"/><path d="M162,178q3,-5 0,-9M198,178q3,-5 0,-9" stroke="#fff" stroke-width="1.6" fill="none" opacity=".8" stroke-linecap="round"/>
+    <rect x="318" y="204" width="24" height="36" rx="4" fill="#9a6b53"/><path d="M330,206q-18,-30 -4,-46q2,24 4,46zM330,206q18,-26 8,-50q-8,22 -8,50z" fill="#5d8a5e"/>
+    <rect y="238" width="360" height="42" fill="#7a6258"/><rect y="238" width="360" height="4" fill="#5e4a42"/>`,
+  station:()=>`<rect x="-10" y="118" width="380" height="98" rx="12" fill="#d9dce2"/><rect x="-10" y="176" width="380" height="14" fill="#c2413b"/>
+    ${[0,1,2,3,4].map(i=>`<rect x="${18+70*i}" y="136" width="48" height="30" rx="5" fill="#33415c"/>`).join('')}
+    <rect x="-10" y="214" width="380" height="18" fill="#3a3a44"/>
+    <rect y="14" width="360" height="12" fill="#4b4f5c"/><rect x="34" y="26" width="7" height="206" fill="#4b4f5c"/><rect x="319" y="26" width="7" height="206" fill="#4b4f5c"/>
+    <path d="M180,26v14" stroke="#4b4f5c" stroke-width="3"/><circle cx="180" cy="56" r="16" fill="#fbf7f1" stroke="#4b4f5c" stroke-width="3"/><path d="M180,56v-10M180,56h7" stroke="#2a2230" stroke-width="2.2" stroke-linecap="round"/>
+    <rect class="pave" y="230" width="360" height="50"/><rect y="230" width="360" height="5" fill="#e8c33c"/>`,
+  airport:()=>`<rect width="360" height="280" fill="#dfe5ec"/>${SKYWIN(0,22,360,150)}
+    <rect y="150" width="360" height="22" fill="#9aa3ad"/>
+    <g transform="translate(108,122)"><ellipse rx="74" ry="11" fill="#fbfcfe"/><path d="M-70,-4l-16,-30h14l22,28z" fill="#c2413b"/><path d="M-6,4l-34,30h18l44,-28z" fill="#e3e8ee"/><path d="M20,-2h36" stroke="#33415c" stroke-width="2.5" stroke-dasharray="3 4"/></g>
+    <path d="M0,22h360M0,172h360M60,22v150M120,22v150M180,22v150M240,22v150M300,22v150" stroke="#f6f8fb" stroke-width="4" fill="none"/>
+    <rect x="232" y="34" width="112" height="46" rx="5" fill="#1f2430"/><text x="242" y="52" font-family="Nunito,sans-serif" font-weight="700" font-size="9" fill="#f6c443">ПРИЛЁТ</text><text x="242" y="68" font-family="Nunito,sans-serif" font-weight="500" font-size="8" fill="#e9edf3">21 НОЯ · ВСТРЕЧА</text>
+    ${[0,1,2].map(i=>`<rect x="${24+34*i}" y="200" width="30" height="34" rx="6" fill="#3d5a8c"/>`).join('')}<rect x="20" y="230" width="106" height="6" rx="3" fill="#2c4268"/>
+    <rect x="304" y="210" width="30" height="36" rx="5" fill="#c2413b"/><path d="M312,210v-14h14v14" fill="none" stroke="#6b6f7a" stroke-width="3"/>
+    <rect y="238" width="360" height="42" fill="#c6ccd4"/><rect y="238" width="360" height="3" fill="#b0b7c1"/>`
+};
+let acc={alya:{},andrey:{}};
+const FIG={
+  alya:{x:128,side:1,scale:.94,lips:'#b23340',hair:'#7a1f26'},
+  andrey:{x:234,side:-1,scale:1.07,lips:'#8a4b3c',hair:'#8b6a48'}
+};
+const GROUND=264, SKIN='#f2c9a8', INK='#2a2230';
+const HEART='M0,3.4C-7,-2 -3.6,-8 0,-4C3.6,-8 7,-2 0,3.4Z';
+const STAR='M0,-6 1.8,-1.9 6,-1.9 2.6,1 3.8,5.5 0,2.8 -3.8,5.5 -2.6,1 -6,-1.9 -1.8,-1.9Z';
+
+function eye(type,x){
+  const s=x<0?1:-1; // inner side direction
+  const dot=cy=>`<circle cx="${x}" cy="${cy}" r="2.7" fill="${INK}"/>`;
+  const brow=(a,b)=>`<path d="M${x-5*s},${a}L${x+4*s},${b}" stroke="${INK}" stroke-width="2" stroke-linecap="round"/>`;
+  switch(type){
+    case 'happy':return `<path d="M${x-4.5},-146q4.5,-6 9,0" fill="none" stroke="${INK}" stroke-width="2.2" stroke-linecap="round"/>`;
+    case 'sleep':return `<path d="M${x-4.5},-148q4.5,5 9,0" fill="none" stroke="${INK}" stroke-width="2.2" stroke-linecap="round"/>`;
+    case 'heart':return `<path d="${HEART}" transform="translate(${x},-146) scale(.95)" fill="#d9363f"/>`;
+    case 'star':return `<path d="${STAR}" transform="translate(${x},-148) scale(.95)" fill="#e9a11c"/>`;
+    case 'sad':return dot(-147)+brow(-153,-156.5);
+    case 'worry':return dot(-148)+brow(-154,-156.5);
+    case 'angry':return dot(-147)+brow(-156.5,-152.5);
+    case 'up':return dot(-150.5);
+    default:return dot(-148);
+  }
+}
+function mouth(type,lips){
+  const line=d=>`<path d="${d}" fill="none" stroke="${lips}" stroke-width="2.3" stroke-linecap="round"/>`;
+  switch(type){
+    case 'big':return `<path d="M-7.5,-139h15q-1,9 -7.5,9q-6.5,0 -7.5,-9z" fill="#6e1f2a" stroke="${lips}" stroke-width="1.6" stroke-linejoin="round"/>`;
+    case 'frown':return line('M-5,-133.5q5,-5 10,0');
+    case 'kiss':return `<circle cx="0" cy="-135" r="2.9" fill="${lips}"/>`;
+    case 'flat':return line('M-4,-135h8');
+    case 'pout':return line('M-4,-133.5q4,-4.5 8,0');
+    case 'soft':return line('M-4,-137q4,3.5 8,0');
+    default:return line('M-6.5,-138q6.5,7 13,0');
+  }
+}
+function face(p,f){
+  let s=eye(p.eyes,-9.5)+eye(p.eyes,9.5)+mouth(p.mouth,f.lips);
+  if(p.blush) s+=`<ellipse cx="-16" cy="-140" rx="4.6" ry="2.8" fill="#e8707a" opacity=".55"/><ellipse cx="16" cy="-140" rx="4.6" ry="2.8" fill="#e8707a" opacity=".55"/>`;
+  if(p.tear) s+=`<path d="M-10,-143q-3.4,6 0,7.2q3.4,-1.2 0,-7.2z" fill="#7fb6e6"/>`;
+  return s;
+}
+function arm(cls){
+  return `<g class="arm ${cls}"><g class="arm-in"><rect class="coat" x="-7.5" y="-6" width="15" height="50" rx="7.5"/><circle cx="0" cy="47" r="7" fill="${SKIN}"/>${cls==='arm-outer'?'<g class="acc-cup"><rect x="-7" y="40" width="14" height="17" rx="3" fill="#fbf7f1"/><rect x="-8" y="38" width="16" height="5" rx="2.5" fill="#6b4a3a"/></g>':''}</g></g>`;
+}
+function buildFigure(id){
+  const f=FIG[id], g=document.getElementById('fig-'+id);
+  const back = id==='alya'
+    ? `<rect x="-30" y="-173" width="60" height="78" rx="15" fill="${f.hair}"/>`
+    : `<ellipse cx="0" cy="-119" rx="27" ry="10" fill="#a9abb3"/>`;
+  const front = id==='alya'
+    ? `<path d="M-26,-142Q-27,-176 0,-176Q27,-176 26,-142L24,-150Q13,-159 0,-152Q-13,-159 -24,-150Z" fill="${f.hair}"/>`
+    : `<path d="M-25.5,-150V-160Q-25.5,-176 -9,-176H11Q27,-176 25.5,-158V-151L19,-159H-15Z" fill="${f.hair}"/>`;
+  const extra = id==='andrey'
+    ? `<path d="M-5,-116v16M5,-116v16" stroke="#c9cbd2" stroke-width="2" stroke-linecap="round"/><path d="M0,-118V-58" stroke="#3b3745" stroke-width="1.5"/>`
+    : `<circle cx="0" cy="-100" r="2" fill="#4a4556"/><circle cx="0" cy="-84" r="2" fill="#4a4556"/>`;
+  const hc=id==='alya'?['#efe6d8','#d9cdb8']:['#6f7480','#565b66'], sc=id==='alya'?'#efe6d8':'#8c2f39', uc=id==='alya'?'#c2413b':'#2f3b5c', o=-f.side;
+  const hat=`<g class="acc-hat"><path d="M-27,-154Q-27,-186 0,-186Q27,-186 27,-154Z" fill="${hc[0]}"/><rect x="-28" y="-162" width="56" height="10" rx="5" fill="${hc[1]}"/>${id==='alya'?`<circle cx="0" cy="-189" r="7" fill="${hc[1]}"/>`:''}</g>`;
+  const scarf=`<g class="acc-scarf"><rect x="-18" y="-128" width="36" height="13" rx="6.5" fill="${sc}"/><rect x="${o*14-5}" y="-122" width="10" height="26" rx="4" fill="${sc}"/></g>`;
+  const umb=`<g class="acc-umb"><path d="M${o*36},-150V-204" stroke="#4b4f5c" stroke-width="3" stroke-linecap="round"/><path d="M${o*14-54},-200Q${o*14},-252 ${o*14+54},-200Z" fill="${uc}"/></g>`;
+  g.innerHTML=`<g class="hop">${back}
+    <rect x="-22" y="-50" width="20" height="50" rx="4" fill="#191720"/><rect x="2" y="-50" width="20" height="50" rx="4" fill="#191720"/>
+    <rect x="-23" y="-9" width="22" height="9" rx="3" fill="#0d0c12"/><rect x="1" y="-9" width="22" height="9" rx="3" fill="#0d0c12"/>
+    ${arm('arm-outer')}
+    <path class="coat" d="M-21,-119H21L28,-48H-28Z" stroke-linejoin="round"/>${extra}
+    <rect x="-6.5" y="-126" width="13" height="10" fill="${SKIN}"/>${scarf}
+    <rect x="-24" y="-170" width="48" height="48" rx="13" fill="${SKIN}"/>
+    ${front}${hat}<g class="face"></g>
+    ${arm('arm-inner')}${umb}</g>`;
+}
+function fxMarkup(kind,from){
+  const fx=(POSES[kind]||{}).fx; if(!fx) return {sky:'',fx:''};
+  const s=FIG[from], p=FIG[from==='alya'?'andrey':'alya'];
+  const top=f=>GROUND-176*f.scale;
+  const heart=(x,y,sc,d)=>`<g transform="translate(${x},${y}) scale(${sc})"><path class="float" style="animation-delay:${d}s" d="${HEART}" fill="#e04a54"/></g>`;
+  let sky='',out='';
+  if(fx==='hearts') out=heart(181,58,2.2,0)+heart(158,82,1.4,.9)+heart(206,78,1.6,1.6)+heart(170,36,1.2,2.2)+heart(196,30,1.3,.5);
+  if(fx==='drift'){ const x=s.x+s.side*52; out=heart(x,top(s)+30,1.7,0)+heart(x+s.side*16,top(s)+12,1.1,1.4); }
+  if(fx==='thought'){ const x=s.x-s.side*26,y=top(s)-22;
+    out=`<circle cx="${s.x-s.side*10}" cy="${top(s)-2}" r="3" fill="#fff"/><circle cx="${s.x-s.side*17}" cy="${top(s)-9}" r="4.5" fill="#fff"/>
+      <ellipse cx="${x}" cy="${y}" rx="24" ry="17" fill="#fff"/><path class="twinkle" d="${HEART}" transform="translate(${x},${y+2}) scale(1.9)" fill="#e04a54"/>`; }
+  if(fx==='stars'){ const y=top(p); [[-38,6,1.5,0],[36,-2,1.2,.5],[-22,-22,1,.9],[24,-26,1.6,.3]].forEach(a=>{
+      out+=`<path class="twinkle" style="animation-delay:${a[3]}s" d="${STAR}" transform="translate(${p.x+a[0]},${y+a[1]}) scale(${a[2]})" fill="#f2b632"/>`; }); }
+  if(fx==='cloud'){ const x=s.x,y=top(s)-16;
+    out=`<g fill="#5d5a6b"><circle cx="${x-12}" cy="${y}" r="9"/><circle cx="${x}" cy="${y-5}" r="11"/><circle cx="${x+12}" cy="${y}" r="9"/><rect x="${x-14}" y="${y-2}" width="28" height="11" rx="5"/></g>
+      <path class="twinkle" d="M${x+1},${y+10}l-5,8h5l-3,8" fill="none" stroke="#f2b632" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>`; }
+  if(fx==='sun'){ let rays=''; for(let i=0;i<8;i++){const a=i*Math.PI/4; rays+=`M${(308+Math.cos(a)*24).toFixed(1)},${(104+Math.sin(a)*24).toFixed(1)}L${(308+Math.cos(a)*32).toFixed(1)},${(104+Math.sin(a)*32).toFixed(1)}`;}
+    sky=`<g class="twinkle"><path d="${rays}" stroke="#f6b73c" stroke-width="3" stroke-linecap="round"/></g><circle cx="308" cy="104" r="18" fill="#f6b73c"/>`; }
+  if(fx==='night'){ sky=`<path d="M318,84a20,20 0 1,0 14,34a16,16 0 1,1 -14,-34z" fill="#f4e7b8"/>`;
+    const x=s.x-s.side*30,y=top(s)-6;
+    [[0,0,13,0],[-s.side*10,-14,16,.8],[-s.side*22,-30,20,1.6]].forEach(a=>{
+      out+=`<text class="float" style="animation-delay:${a[3]}s" x="${x+a[0]}" y="${y+a[1]}" font-family="Nunito,sans-serif" font-weight="700" font-size="${a[2]}" fill="#fff" text-anchor="middle">z</text>`; }); }
+  return {sky,fx:out};
+}
+function pose(id,p){
+  const f=FIG[id], g=document.getElementById('fig-'+id); p=Object.assign({},REST,p);
+  const cur=FIG.andrey.x-FIG.alya.x, dx=p.gap?Math.max(0,(cur-p.gap)/2):p.dx;
+  const free=p.outer===REST.outer&&!p.wave, A=acc[id]||{}, umb=A.umb&&free, cup=A.cup&&free&&!umb;
+  g.style.transform=`translate(${f.x+f.side*dx}px,${GROUND}px) rotate(${f.side*p.lean}deg) scale(${f.scale})`;
+  const inner=g.querySelector('.arm-inner'), outer=g.querySelector('.arm-outer');
+  inner.style.transform=`translate(${f.side*24}px,-112px) rotate(${-f.side*p.inner}deg)`;
+  outer.style.transform=`translate(${-f.side*24}px,-112px) rotate(${f.side*(umb?165:p.outer)}deg)`;
+  outer.querySelector('.arm-in').classList.toggle('wave',!!p.wave);
+  const show=(c,on)=>{ g.querySelector(c).style.display=on?'':'none'; };
+  show('.acc-hat',A.hat); show('.acc-scarf',A.hat); show('.acc-umb',umb); show('.acc-cup',cup);
+  const col=LOOKS[state.looks[id]]||''; g.querySelectorAll('.coat').forEach(c=>{ c.style.fill=col; });
+  g.querySelector('.face').innerHTML=face(p,f);
+}
+
+function wxLayers(time,wx){
+  let back='', front='';
+  if(time==='night'&&wx==='clear') [[40,60],[92,118],[150,30],[214,128],[262,96],[318,140],[336,70],[20,140],[118,84]].forEach(a=>{ back+=`<circle cx="${a[0]}" cy="${a[1]}" r="1.4" fill="#fff" opacity=".8"/>`; });
+  if(wx!=='clear'){
+    const rain=wx==='rain';
+    back+=`<rect width="360" height="172" fill="${rain?'#465068':'#8e97ad'}" opacity="${rain?.42:.3}"/>`;
+    [[70,34],[190,22],[300,40]].forEach(a=>{ back+=`<g fill="${rain?'#8a92a6':'#e9ecf3'}" opacity=".9"><circle cx="${a[0]-20}" cy="${a[1]}" r="14"/><circle cx="${a[0]}" cy="${a[1]-8}" r="19"/><circle cx="${a[0]+22}" cy="${a[1]}" r="15"/><rect x="${a[0]-30}" y="${a[1]-2}" width="62" height="16" rx="8"/></g>`; });
+    let marks='';
+    if(rain){ for(let i=0;i<22;i++){ const x0=i*21+6, y0=(i*29)%48-48; for(let k=0;k<8;k++){ const x=x0-12*k, y=y0+48*k; marks+=`M${x},${y}l-3,12`; } }
+      front=`<rect width="360" height="280" fill="#2f3850" opacity=".14"/><path class="rain" d="${marks}" stroke="#e3ebf7" stroke-width="1.4" stroke-linecap="round" opacity=".6" fill="none"/>`; }
+    else { for(let i=0;i<15;i++){ const x0=i*27+8, y0=(i*37)%64-64; for(let k=0;k<6;k++) marks+=`<circle cx="${x0-10*k}" cy="${y0+64*k}" r="${1.3+(i%3)*.4}"/>`; }
+      front=`<g class="snowfall" fill="#fff" opacity=".9">${marks}</g>`; }
+  }
+  return {back,front};
+}
+const KRASNODAR=`<rect x="180" y="172" width="180" height="46" fill="#7fa37a"/><rect x="180" y="172" width="180" height="46" fill="#101426" style="opacity:var(--nk)"/>
+  <g class="far"><rect x="196" y="138" width="46" height="38"/><path d="M190,140l29,-17l29,17z"/><rect x="264" y="120" width="40" height="56"/><rect x="320" y="142" width="44" height="34"/><path d="M314,144l28,-15l28,15z"/><ellipse cx="253" cy="142" rx="7" ry="36"/><ellipse cx="311" cy="148" rx="6" ry="30"/><ellipse cx="187" cy="152" rx="6" ry="28"/></g>
+  <g style="fill:var(--glint)"><rect x="204" y="150" width="8" height="10"/><rect x="224" y="150" width="8" height="10"/><rect x="271" y="130" width="8" height="10"/><rect x="288" y="130" width="8" height="10"/><rect x="271" y="150" width="8" height="10"/><rect x="288" y="150" width="8" height="10"/><rect x="334" y="154" width="8" height="10"/></g>
+  <rect class="stone" x="180" y="214" width="180" height="38"/><rect class="stone-top" x="180" y="214" width="180" height="7"/><rect class="pave" x="180" y="252" width="180" height="28"/>`;
+const MOSCOW_EXTRA=`<path class="far" d="M30,160v-34h4v-10l6,-24l6,24v10h4v34z"/><path d="${STAR}" transform="translate(40,90) scale(.9)" fill="#c2413b"/>`;
+function cityLabel(id){ const l=live[id], ok=l&&typeof l.at==='number'&&Date.now()-l.at<3*3600*1000&&WX[l.weather]&&isFinite(l.temp);
+  return CITY[id].name+(ok?' '+(l.temp>0?'+':'')+l.temp+'°, '+{clear:'ясно',rain:'дождь',snow:'снег'}[l.weather]:''); }
+function cityLabels(){ return `<text class="city" x="12" y="22">${cityLabel('alya')}</text><text class="city" x="348" y="22" text-anchor="end">${cityLabel('andrey')}</text>`; }
+function half(side,id,c){
+  const x=side==='L'?0:180, L=wxLayers(c.time,c.weather);
+  const lab=cityLabel(id);
+  const bg=`<g data-time="${c.time}" clip-path="url(#clip${side})"><defs><linearGradient id="sky${side}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sky-top)"/><stop offset=".38" style="stop-color:var(--sky-mid)"/><stop offset=".6" style="stop-color:var(--sky-low)"/></linearGradient></defs>
+    <rect x="${x}" width="180" height="280" fill="url(#sky${side})"/>${L.back}${side==='L'?PLACES.embankment()+MOSCOW_EXTRA:KRASNODAR}
+    <text class="city" x="${side==='L'?12:348}" y="22" text-anchor="${side==='L'?'start':'end'}">${lab}</text></g>`;
+  return {bg,front:`<g clip-path="url(#clip${side})">${L.front}</g>`};
+}
+function confetti(){
+  const cols=['#e04a54','#f6b73c','#5aa7e6','#7fa37a','#fbf7f1','#c98fd0']; let o='';
+  for(let i=0;i<44;i++){ const x=(i*83)%360, y=-((i*57)%300)-10, d=(3.2+(i%5)*.5).toFixed(1), w=4+(i%3)*2;
+    o+=`<rect class="confetti" x="${x}" y="${y}" width="${w}" height="${w*1.6}" rx="1" fill="${cols[i%6]}" style="animation-duration:${d}s;animation-delay:-${(i%7)*.6}s"/>`; }
+  return o;
+}
+function weather(v){
+  const el=$('scene'), party=v.party?confetti():'';
+  if(v.split){ el.dataset.time=v.cA.time; el.dataset.indoor='0';
+    const a=half('L','alya',v.cA), n=half('R','andrey',v.cN);
+    $('place').innerHTML=`<defs><clipPath id="clipL"><rect width="180" height="280"/></clipPath><clipPath id="clipR"><rect x="180" width="180" height="280"/></clipPath></defs>`+a.bg+n.bg+`<path d="M180,0V280" stroke="#fff" stroke-width="2" stroke-dasharray="1 8" stroke-linecap="round" opacity=".75"/>`;
+    $('wx-back').innerHTML=''; $('wx-front').innerHTML=a.front+n.front; return; }
+  el.dataset.time=v.c.time; el.dataset.indoor=v.place==='embankment'?'0':'1';
+  $('place').innerHTML=PLACES[v.place]();
+  if(INDOOR[v.place]){ $('wx-back').innerHTML=''; $('wx-front').innerHTML=party+cityLabels(); return; }
+  const L=wxLayers(v.c.time,v.c.weather); $('wx-back').innerHTML=L.back; $('wx-front').innerHTML=L.front+party+cityLabels();
+}
+function ago(ts){
+  const d=Math.max(0,Date.now()-ts), m=Math.floor(d/60000);
+  if(m<1) return 'только что'; if(m<60) return m+' мин назад';
+  const h=Math.floor(m/60); if(h<24) return h+' ч назад';
+  return new Date(ts).toLocaleDateString('ru-RU',{day:'numeric',month:'short'});
+}
+function plural(n,a,b,c){ const m=n%100,k=n%10; return m>10&&m<20?c:k===1?a:k>=2&&k<=4?b:c; }
+function countdown(){
+  const target=new Date(2026,10,21), ms=target-Date.now(), el=$('count');
+  if(ms<=-864e5){ el.hidden=true; $('bar').hidden=true; return; }
+  el.hidden=false;
+  const start=new Date(2026,9,9), f=Math.min(1,Math.max(.02,(Date.now()-start)/(target-start)));
+  $('bar').hidden=false; $('bar-fill').style.width=(f*100).toFixed(1)+'%'; $('bar').setAttribute('aria-valuenow',Math.round(f*100));
+  if(ms<=0){ $('count-n').textContent='Сегодня'; $('count-t').textContent='21 ноября'; return; }
+  const days=Math.floor(ms/864e5), hours=Math.ceil(ms/36e5);
+  if(days>=1){ const n=Math.ceil(ms/864e5); $('count-n').textContent=n; $('count-t').textContent=plural(n,'день','дня','дней')+' до 21 ноября'; }
+  else { $('count-n').textContent=hours; $('count-t').textContent=plural(hours,'час','часа','часов')+' до 21 ноября'; }
+}
+
+const TIMES={morning:'Утро',day:'День',evening:'Вечер',night:'Ночь'}, WX={clear:'Ясно',rain:'Дождь',snow:'Снег'};
+function cleanScene(s){ s=s||{}; return {time:TIMES[s.time]?s.time:'evening',weather:WX[s.weather]?s.weather:'clear',place:PL[s.place]?s.place:'cities',mode:s.mode==='manual'?'manual':'auto'}; }
+function clean(m){
+  if(!m||typeof m!=='object'||!NAMES[m.from]||!KINDS[m.kind]||typeof m.ts!=='number') return null;
+  const text=m.kind==='note'?String(m.text||'').slice(0,80):KINDS[m.kind].label;
+  if(!text) return null;
+  const out={from:m.from,kind:m.kind,text,ts:m.ts};
+  if(m.re&&typeof m.re.ts==='number') out.re={ts:m.re.ts};
+  return out;
+}
+function list(v){ return Array.isArray(v)?v:(v&&typeof v==='object'?Object.values(v):[]); }
+function cleanMoods(v){ v=v||{}; const o={}; ['alya','andrey'].forEach(id=>{ const m=v[id]; o[id]=m&&MOODS[m.k]&&typeof m.ts==='number'?{k:m.k,ts:m.ts}:null; }); return o; }
+function cleanLooks(v){ v=v||{}; return {alya:v.alya in LOOKS?v.alya:'black',andrey:v.andrey in LOOKS?v.andrey:'black'}; }
+function mskDay(off){ return new Date(Date.now()+3*3600e3-(off||0)*864e5).toISOString().slice(0,10); }
+function cleanStats(v){ v=v||{}; return {day:typeof v.day==='string'?v.day.slice(0,10):'',count:Math.max(0,+v.count||0),streak:Math.max(0,+v.streak||0)}; }
+function bump(st){ const t=mskDay(); return st.day===t?{day:t,count:st.count+1,streak:st.streak||1}:{day:t,count:1,streak:st.day===mskDay(1)?st.streak+1:1}; }
+function normalize(d){ d=d||{}; return {last:clean(d.last),log:list(d.log).map(clean).filter(Boolean).slice(0,20),scene:cleanScene(d.scene),moods:cleanMoods(d.moods),looks:cleanLooks(d.looks),stats:cleanStats(d.stats)}; }
+function store(k,v){ try{ if(v===undefined) return localStorage.getItem(k); localStorage.setItem(k,v); }catch(e){} return null; }
+const $=id=>document.getElementById(id);
+const CODE=/^[A-Za-z0-9_-]{6,40}$/;
+const TOKEN=/^\d{5,}:[A-Za-z0-9_-]{30,}$/;
+function cleanTg(t){ if(!t||typeof t!=='object'||typeof t.token!=='string'||!TOKEN.test(t.token)) return null;
+  const c=t.chats||{}; return {token:t.token,bot:String(t.bot||'').replace(/[^A-Za-z0-9_]/g,''),chats:{alya:+c.alya||0,andrey:+c.andrey||0}}; }
+let raw={}, tg=null, tgNote='', tgBusy=false;
+let state=normalize(null), me=null, code=null, sending=false, shownTs=null, loaded=false, es=null;
+{ let h=''; try{ h=decodeURIComponent(location.hash.slice(1)); }catch(e){}
+  if(CODE.test(h)){ code=h; store('pair-code',h); } else { const c=store('pair-code'); if(c&&CODE.test(c)) code=c; }
+  const m=store('pair-me'); if(NAMES[m]) me=m; }
+const url=()=>DB_URL+'/rooms/'+code+'.json';
+
+const ACTIVE_MS=2*3600*1000;
+let live={}; try{ live=JSON.parse(store('live-wx')||'{}')||{}; }catch(e){ live={}; }
+function wxOf(c){ return (c>=71&&c<=77)||c===85||c===86?'snow':(c>=51&&c<=67)||(c>=80&&c<=82)||c>=95?'rain':'clear'; }
+async function loadWeather(){
+  await Promise.all(Object.keys(CITY).map(async id=>{ try{ const c=CITY[id];
+    const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude='+c.lat+'&longitude='+c.lon+'&current=temperature_2m,weather_code');
+    const j=await r.json(); if(j&&j.current&&isFinite(+j.current.temperature_2m)) live[id]={weather:wxOf(+j.current.weather_code),temp:Math.round(+j.current.temperature_2m),at:Date.now()}; }catch(e){} }));
+  store('live-wx',JSON.stringify(live)); render();
+}
+function hourTime(){ const h=(new Date().getUTCHours()+3)%24; return h>=6&&h<11?'morning':h>=11&&h<17?'day':h>=17&&h<22?'evening':'night'; }
+function cond(id){ const sc=state.scene; if(sc.mode==='manual') return {time:sc.time,weather:sc.weather,temp:null};
+  const l=live[id], ok=l&&typeof l.at==='number'&&Date.now()-l.at<3*3600*1000&&WX[l.weather];
+  return {time:hourTime(),weather:ok?l.weather:'clear',temp:ok&&isFinite(l.temp)?l.temp:null}; }
+let shownHour='';
+let wasActive=false;
+function progress(){ const t=new Date(2026,10,21), s0=new Date(2026,9,9), now=Date.now(); return {f:Math.min(1,Math.max(0,(now-s0)/(t-s0))),today:now>=t&&now-t<864e5}; }
+function isActive(){ const l=state.last; return !!l&&Date.now()-Math.max(l.ts,l.re?l.re.ts:0)<ACTIVE_MS; }
+function moodOf(id){ const m=state.moods[id]; return m&&new Date(m.ts).toDateString()===new Date().toDateString()?m.k:null; }
+function render(){
+  const last=state.last, scene=$('scene'), pr=progress(), sc=state.scene;
+  const from=last?last.from:'alya', other=from==='alya'?'andrey':'alya';
+  let fx={sky:'',fx:''}; wasActive=isActive(); shownHour=hourTime();
+  const cA=cond('alya'), cN=cond('andrey');
+  const split=sc.place==='cities'&&!wasActive&&!pr.today, place=sc.place==='cities'?'embankment':sc.place, indoor=!!INDOOR[place];
+  const cJ=sc.place==='cities'&&wasActive?cond(last.re?other:from):cA;
+  const mk=c=>({hat:!indoor&&(c.weather==='snow'||(c.temp!==null&&c.temp<=0)),umb:!indoor&&c.weather==='rain',cup:c.time==='morning'});
+  acc={alya:mk(split?cA:cJ),andrey:mk(split?cN:cJ)};
+  const gap=(split?180:168)-(split?74:62)*pr.f; FIG.alya.x=181-gap/2; FIG.andrey.x=181+gap/2;
+  weather({split,place,cA,cN,c:cJ,party:pr.today});
+  $('party').hidden=!pr.today;
+  { const st=state.stats, t=mskDay(), today=st.day===t?st.count:0, streak=st.day===t||st.day===mskDay(1)?st.streak:0;
+    $('stats').hidden=!loaded; $('st-today').textContent=today; $('st-streak').textContent=streak; $('st-streak-t').textContent=plural(streak,'день','дня','дней')+' подряд'; }
+  if(wasActive){ let key=last.re?'re_'+last.kind:last.kind; if(!POSES[key]) key=last.kind;
+    pose(from,POSES[key].S); pose(other,POSES[key].P); fx=fxMarkup(key,from); }
+  else if(pr.today){ pose('alya',POSES.hug.S); pose('andrey',POSES.hug.P); fx=fxMarkup('hug','alya'); }
+  else { const LOW={sad:1,miss:1,tired:1,angry:1}, ma=moodOf('alya'), mn=moodOf('andrey');
+    const extra=(mine,theirs)=>mine==='miss'&&theirs==='miss'?{inner:58,lean:4}
+      :LOW[theirs]&&!LOW[mine]?{inner:55,lean:3}
+      :LOW[theirs]&&LOW[mine]?{inner:30,lean:2}
+      :mine==='happy'&&theirs==='happy'?{outer:150,wave:1}:{};
+    pose('alya',Object.assign({},ma?MOODS[ma].face:{},extra(ma,mn))); pose('andrey',Object.assign({},mn?MOODS[mn].face:{},extra(mn,ma))); }
+  $('sky').innerHTML=indoor?'':fx.sky; $('fx').innerHTML=fx.fx;
+  const actor=last&&last.re?other:from, sig=last?(last.re?last.re.ts:last.ts):0;
+  document.querySelectorAll('.hop').forEach(h=>h.classList.toggle('is-sender',!!last&&h.parentNode.id==='fig-'+actor));
+  if(last&&sig!==shownTs){
+    const seen=+store('seen-ts')||0;
+    if(shownTs!==null||sig>seen){ scene.classList.remove('play'); void scene.offsetWidth; scene.classList.add('play'); }
+    store('seen-ts',String(sig));
+  }
+  if(loaded) shownTs=sig;
+  $('bubble-text').textContent=last?last.text:'Здесь появится первое сообщение';
+  $('bubble-meta').textContent=last?NAMES[last.from]+' · '+ago(last.ts):'';
+  $('rebubble').hidden=!(last&&last.re); if(last&&last.re) $('re-text').textContent=REPLY[last.kind];
+  const log=$('log'); log.textContent='';
+  if(!state.log.length){ const li=document.createElement('li'); li.className='empty'; li.textContent='Пока пусто. Всё отправленное будет здесь.'; log.appendChild(li); }
+  state.log.slice(0,8).forEach(m=>{
+    const li=document.createElement('li'), s=document.createElement('span'), b=document.createElement('b'), t=document.createElement('time');
+    b.textContent=NAMES[m.from]+': '; s.appendChild(b); s.appendChild(document.createTextNode(m.text+(m.re?' → '+REPLY[m.kind]:'')));
+    t.textContent=ago(m.ts); li.appendChild(s); li.appendChild(t); log.appendChild(li);
+  });
+  renderControls();
+}
+function renderControls(){
+  renderTg();
+  const ready=!!DB_URL&&!!code;
+  $('setup').hidden=!!DB_URL; $('code-card').hidden=!DB_URL||!!code; $('who-card').hidden=!ready||!!me;
+  $('controls').hidden=!ready||!me; $('picks').hidden=me!=='alya';
+  $('pick-time').hidden=$('pick-weather').hidden=state.scene.mode!=='manual';
+  $('switch').hidden=!me; $('switch').textContent=me?'Это телефон '+(me==='alya'?'Али':'Андрея')+'. Сменить':'';
+  const L=state.last;
+  $('bubble').dataset.mine=L&&L.from===me?'1':'0'; $('rebubble').dataset.mine=L&&L.re&&L.from!==me&&me?'1':'0';
+  const canReact=!!L&&!!me&&ready&&L.from!==me&&!L.re; $('react').hidden=!canReact; $('react').disabled=sending; if(canReact) $('react').textContent=REPLY[L.kind];
+  const mood=me?moodOf(me):null;
+  document.querySelectorAll('#moods button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.val===mood));
+  document.querySelectorAll('#looks button').forEach(b=>b.setAttribute('aria-pressed',!!me&&b.dataset.val===state.looks[me]));
+  document.querySelectorAll('.seg button').forEach(b=>{ b.disabled=sending; b.setAttribute('aria-pressed',state.scene[b.dataset.key]===b.dataset.val); });
+  document.querySelectorAll('#grid button').forEach(b=>b.disabled=sending);
+  $('note-input').disabled=sending; $('note-send').disabled=sending;
+  if(!$('hint').classList.contains('warn')) $('hint').textContent='Отправь '+(me==='alya'?'Андрею':'Але')+':';
+}
+function warn(t){ const h=$('hint'); h.className='hint warn'; h.textContent=t; }
+function apply(d){ raw=d&&typeof d==='object'?d:{}; tg=cleanTg(raw.tg); if(sending) return; loaded=true; state=normalize(raw); render(); }
+async function refetch(){ if(!DB_URL||!code) return; try{ const r=await fetch(url()); if(r.ok) apply(await r.json()); }catch(e){} }
+function connect(){
+  if(!DB_URL||!code) return;
+  if(es) es.close();
+  es=new EventSource(url());
+  es.addEventListener('put',e=>{ try{ const m=JSON.parse(e.data); if(m.path==='/') apply(m.data); else refetch(); }catch(_){} });
+  es.addEventListener('patch',e=>{ try{ const m=JSON.parse(e.data); if(m.path==='/'&&m.data) apply(Object.assign({},raw,m.data)); else refetch(); }catch(_){} });
+  es.addEventListener('cancel',()=>warn('Нет доступа к базе. Проверь код.'));
+}
+async function commit(next){
+  if(!me||sending||!DB_URL||!code) return false;
+  const prev=state; $('hint').className='hint'; sending=true; state=next; render();
+  try{ const r=await fetch(url(),{method:'PATCH',body:JSON.stringify({last:next.last,log:next.log,scene:next.scene,stats:next.stats})}); if(!r.ok) throw new Error(r.status); }
+  catch(e){ state=prev; sending=false; render(); warn('Не получилось отправить. Проверь интернет и попробуй ещё раз.'); return false; }
+  sending=false; renderControls(); return true;
+}
+function send(kind,text){
+  const msg=clean({from:me,kind,text,ts:Date.now()}); if(!msg) return;
+  commit(Object.assign({},state,{last:msg,log:[msg].concat(state.log).slice(0,20),stats:bump(state.stats)})).then(ok=>{ if(ok) notify(NAMES[me]+': '+msg.text); });
+}
+function react(){
+  const L=state.last; if(!L||!me||L.from===me||L.re) return;
+  const done=Object.assign({},L,{re:{ts:Date.now()}});
+  const log=state.log.map((m,i)=>i===0&&m.ts===L.ts?done:m);
+  commit(Object.assign({},state,{last:done,log,stats:bump(state.stats)})).then(ok=>{ if(ok) notify(NAMES[me]+' в ответ: '+REPLY[L.kind]); });
+}
+async function putChild(path,val){
+  if(!me||!DB_URL||!code) return;
+  const top=path.split('/')[0], key=path.split('/')[1];
+  raw=Object.assign({},raw,{[top]:Object.assign({},raw[top],{[key]:val})}); state=normalize(raw); render();
+  try{ const r=await fetch(DB_URL+'/rooms/'+code+'/'+path+'.json',{method:'PUT',body:JSON.stringify(val)}); if(!r.ok) throw new Error(r.status); }
+  catch(e){ warn('Не получилось сохранить. Проверь интернет и попробуй ещё раз.'); }
+}
+function setMood(k){ putChild('moods/'+me,{k,ts:Date.now()}); }
+function setLook(k){ putChild('looks/'+me,k); }
+// ---------- Telegram notifications ----------
+async function tgApi(token,method,params){
+  const r=await fetch('https://api.telegram.org/bot'+token+'/'+method,{method:'POST',body:new URLSearchParams(params)});
+  const j=await r.json(); if(!j.ok) throw new Error(j.description||'telegram'); return j.result;
+}
+function notify(text){
+  const other=me==='alya'?'andrey':'alya'; if(!tg||!tg.chats[other]) return;
+  tgApi(tg.token,'sendMessage',{chat_id:String(tg.chats[other]),text:text,
+    reply_markup:JSON.stringify({inline_keyboard:[[{text:'Открыть',url:location.origin+location.pathname+'#'+code}]]})}).catch(()=>{});
+}
+function renderTg(){
+  const card=$('tg-card'); card.hidden=!DB_URL||!code||!me||!loaded; if(card.hidden) return;
+  const other=me==='alya'?'andrey':'alya', mine=tg&&tg.chats[me], theirs=tg&&tg.chats[other];
+  $('tg-form').hidden=!!tg||me!=='alya'; $('tg-steps').hidden=!tg||!!mine;
+  $('tg-check').disabled=tgBusy;
+  let t;
+  if(!tg) t=me==='alya'?'Вставь токен бота, который выдал BotFather.':'Аля ещё не подключила бота.';
+  else if(!mine) t='Открой бота, нажми Start, вернись сюда и нажми «Готово».';
+  else t='У тебя включены. У '+(other==='alya'?'Али':'Андрея')+' '+(theirs?'тоже включены.':'пока нет.');
+  $('tg-text').textContent=tgNote||t; $('tg-text').className=tgNote?'hint warn':'hint';
+  if(tg) $('tg-open').href='https://t.me/'+tg.bot+'?start='+me;
+}
+async function tgSaveToken(v){
+  if(tgBusy) return;
+  if(!TOKEN.test(v)){ tgNote='Это не похоже на токен. Он выглядит как 123456789:AAH… и копируется целиком.'; renderTg(); return; }
+  tgBusy=true;
+  try{ const bot=await tgApi(v,'getMe',{}); const obj={token:v,bot:bot.username,chats:{alya:0,andrey:0}};
+    const r=await fetch(DB_URL+'/rooms/'+code+'/tg.json',{method:'PUT',body:JSON.stringify(obj)}); if(!r.ok) throw new Error('db');
+    raw=Object.assign({},raw,{tg:obj}); tg=cleanTg(obj); tgNote=''; }
+  catch(e){ tgNote='Не получилось проверить токен. Убедись, что он скопирован целиком, и попробуй ещё раз.'; }
+  tgBusy=false; renderTg();
+}
+async function tgConnect(){
+  if(!tg||tgBusy) return; tgBusy=true; renderTg();
+  const other=me==='alya'?'andrey':'alya';
+  try{
+    const ups=await tgApi(tg.token,'getUpdates',{limit:'100',allowed_updates:'["message"]'});
+    let exact=0, plain=0;
+    ups.forEach(u=>{ const m=u.message; if(!m||!m.chat||m.chat.type!=='private'||typeof m.text!=='string') return;
+      const t=m.text.trim(); if(t==='/start '+me) exact=m.chat.id; else if(t==='/start'&&m.chat.id!==tg.chats[other]) plain=m.chat.id; });
+    const id=exact||plain;
+    if(!id) tgNote='Пока не вижу тебя. Открой бота, нажми Start и попробуй ещё раз.';
+    else { const r=await fetch(DB_URL+'/rooms/'+code+'/tg/chats/'+me+'.json',{method:'PUT',body:JSON.stringify(id)}); if(!r.ok) throw new Error('db');
+      tg.chats[me]=id; tgNote=''; tgApi(tg.token,'sendMessage',{chat_id:String(id),text:'Готово! Сюда будут приходить уведомления.'}).catch(()=>{}); }
+  }catch(e){ tgNote='Не получилось связаться с Telegram. Попробуй ещё раз.'; }
+  tgBusy=false; renderTg();
+}
+function setScene(key,val){
+  if(me!=='alya'||state.scene[key]===val) return;
+  commit(Object.assign({},state,{scene:Object.assign({},state.scene,{[key]:val})}));
+}
+function setMe(v){ me=v; if(v) store('pair-me',v); render(); }
+
+buildFigure('alya'); buildFigure('andrey');
+Object.keys(KINDS).forEach(k=>{ if(k==='note') return;
+  const b=document.createElement('button'); b.type='button'; b.id='send-'+k; b.textContent=KINDS[k].label;
+  if(KINDS[k].hot) b.className='hot'; b.addEventListener('click',()=>send(k)); $('grid').appendChild(b); });
+[['seg-place','place',PL],['seg-mode','mode',MODES],['seg-time','time',TIMES],['seg-weather','weather',WX]].forEach(a=>{ Object.keys(a[2]).forEach(v=>{
+  const b=document.createElement('button'); b.type='button'; b.id='set-'+a[1]+'-'+v; b.dataset.key=a[1]; b.dataset.val=v; b.textContent=a[2][v];
+  b.addEventListener('click',()=>setScene(a[1],v)); $(a[0]).appendChild(b); }); });
+Object.keys(MOODS).forEach(k=>{ const b=document.createElement('button'); b.type='button'; b.id='mood-'+k; b.dataset.val=k; b.textContent=MOODS[k].label; b.addEventListener('click',()=>setMood(k)); $('moods').appendChild(b); });
+Object.keys(LOOKS).forEach(k=>{ const b=document.createElement('button'); b.type='button'; b.id='look-'+k; b.dataset.val=k; b.setAttribute('aria-label',LOOK_NAMES[k]); b.title=LOOK_NAMES[k]; b.style.background=LOOKS[k]||'#24212b'; b.addEventListener('click',()=>setLook(k)); $('looks').appendChild(b); });
+$('react').addEventListener('click',react);
+$('me-alya').addEventListener('click',()=>setMe('alya'));
+$('me-andrey').addEventListener('click',()=>setMe('andrey'));
+$('switch').addEventListener('click',()=>setMe(null));
+$('note-form').addEventListener('submit',e=>{ e.preventDefault(); const i=$('note-input'), v=i.value.trim(); if(!v) return; send('note',v); i.value=''; });
+$('code-form').addEventListener('submit',e=>{ e.preventDefault(); const v=$('code-input').value.trim();
+  if(!CODE.test(v)){ $('code-input').value=''; $('code-input').placeholder='Код не подходит'; return; }
+  code=v; store('pair-code',v); try{ location.hash=v; }catch(_){} render(); connect(); });
+$('tg-form').addEventListener('submit',e=>{ e.preventDefault(); tgSaveToken($('tg-token').value.trim()); });
+$('tg-check').addEventListener('click',tgConnect);
+$('scene').addEventListener('animationend',e=>{ if(e.animationName==='hop') $('scene').classList.remove('play'); });
+render(); countdown(); connect(); loadWeather();
+setInterval(loadWeather,20*60*1000);
+setInterval(()=>{ countdown(); if(isActive()!==wasActive||hourTime()!==shownHour) render(); if(state.last) $('bubble-meta').textContent=NAMES[state.last.from]+' · '+ago(state.last.ts); },60000);
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState!=='visible') return; if(es&&es.readyState===2) connect(); refetch(); const l=live.alya; if(!l||Date.now()-l.at>20*60*1000) loadWeather(); });
+})();
+</script>
+</body>
+</html>
